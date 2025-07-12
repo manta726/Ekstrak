@@ -25,7 +25,7 @@ export default function LunosExtractor() {
       const response = await fetch("https://api.lunos.tech/v1/extract", {
         method: "POST",
         headers: {
-          Authorization: `Bearer ${apiKey}`,
+          "x-api-key": apiKey,,
         },
         body: formData,
       })
